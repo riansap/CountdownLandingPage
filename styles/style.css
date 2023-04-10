@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/background-image.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  padding: 0 5%;
+  position: relative;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  width: 140px;
+  top: 2%;
+  left: 5%;
+  position: absolute;
+  animation: logo-ml 4s linear infinite;
+}
+.content {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  color: ivory;
+  padding: 3%;
+}
+.content p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.content h1 span {
+  color: gold;
+}
+.content button {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 12px 25px;
+  color: ivory;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+.countdown {
+  display: flex;
+}
+.countdown div {
+  flex-basis: 100px;
+  text-align: center;
+}
+.countdown div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+  margin-left: -20px;
+}
+.countdown div span {
+  margin-bottom: -14px;
+  margin-left: -20px;
+}
+.logo-ml {
+  width: 200px;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  animation: logo-ml 4s linear infinite;
+}
+@keyframes logo-ml {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+  }
+  .logo {
+    width: 280px;
+    position: absolute;
+    left: 8%;
+    top: -3%;
+    animation: logo-ml 4s linear infinite;
+    cursor: pointer;
+  }
+  .content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: ivory;
+    padding: 3%;
+  }
+  .content p {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .content h1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  .content h1 span {
+    color: gold;
+  }
+  .content button {
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 25px;
+    color: ivory;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .countdown {
+    display: flex;
+  }
+  .countdown div {
+    flex-basis: 100px;
+    text-align: center;
+  }
+  .countdown div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+    margin-left: -20px;
+  }
+  .countdown div span {
+    margin-bottom: -14px;
+    margin-left: -20px;
+  }
+  .logo-ml {
+    width: 360px;
+    position: absolute;
+    right: 8%;
+    top: 0;
+    animation: logo-ml 4s linear infinite;
+  }
+  @keyframes logo-ml {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
